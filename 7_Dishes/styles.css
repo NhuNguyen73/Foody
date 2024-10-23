@@ -1,0 +1,127 @@
+.dieuhuong {
+    margin-top: 60px;
+    text-align: left;
+    padding: 20px;
+  }
+  .dieuhuong h1{
+    margin-left: 10px;
+    color: rgb(4, 17, 24);
+    font-size: 25px;
+  }
+  .main {
+    max-width: 800px;
+    margin: 0px auto 50px;
+  }
+  .content-left{
+    margin-right: 50px;
+  }
+  .image img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .info {
+    display: flex;
+    /* align-items: center; */
+    /* Căn giữa theo trục dọc */
+    justify-content: space-between; /* Đảm bảo khoảng cách hợp lý giữa hình ảnh và nội dung */
+    margin-left: -100px;
+  }
+  .image {
+    flex-shrink: 0; /* Đảm bảo kích thước hình ảnh không thay đổi khi thu nhỏ */
+  }
+  .thongtin {
+    padding: 15px;
+    flex-grow: 1; /* Cho phép phần thông tin này chiếm hết không gian còn lại */
+    padding-left: 20px; /* Thêm khoảng cách giữa ảnh và phần thông tin */
+  }
+  
+  .baiviet {
+    text-align: left; /* Căn trái cho văn bản */
+    max-width: 960px; /* Thiết lập chiều rộng tối đa cho khối */
+    margin: 0 auto; /* Căn giữa khối nội dung */
+    overflow: hidden; /* Ẩn nội dung tràn ra ngoài */
+    padding-bottom: 20px;
+    padding-right: 40px;
+  }
+  
+  .baiviet img {
+    width: 100%; /* Đặt chiều rộng hình ảnh là 100% của phần tử cha */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    display: block; /* Đảm bảo không có khoảng trống bên dưới hình ảnh */
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    /* Khoảng cách giữa hình ảnh và văn bản */
+  }
+  .baiviet p {
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .highlight {
+    font-size: 35px; /* Tăng kích thước chữ */
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  figure {
+    text-align: center; /* Căn giữa hình ảnh và chú thích */
+  }
+  
+  figcaption {
+    font-size: 13px; /* Kích thước chữ nhỏ hơn một chút */
+    color: #555; /* Màu chữ xám */
+    font-style: italic; /* Chữ nghiêng */
+    padding-bottom: 10px; /* Khoảng cách giữa ảnh và chữ */
+  }
+  
+  .comment-section {
+    padding: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .comment {
+    margin-bottom: 10px;
+  }
+  
+  .comment-content {
+    margin-left: 10px;
+  }
+  
+  #comment-input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  #submit-comment {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #submit-comment:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 1000px) {
+    .info {
+      flex-direction: column; /* Xếp hình ảnh và nội dung chồng lên nhau */
+      text-align: center;
+      padding: 0px;
+    }
+    .main {
+      padding: 0px; /* Thêm padding hai bên cho phần nội dung */
+      margin: 0 auto; /* Căn giữa phần nội dung */
+    }
+    .baiviet {
+      padding-left: 140px;
+    }
+    .imageright {
+      padding-left: 100px;
+    }
+  }

@@ -1,0 +1,149 @@
+html {
+  font-size: 62.5%;
+}
+
+footer {
+  background: url(../assets/img/Main-top-Image/main-footer.jpg);
+
+  padding: 82px 150px ;
+  background-size: cover;
+  background-position: 0 bottom;
+  border-bottom: 2px solid #4596b0;
+
+}
+
+.footer .row {
+  display: flex;
+}
+
+.footer .row .column {
+  width: 15%;
+ 
+}
+
+.footer .row .column h2 {
+  color: #3795d5;
+  font-size: 25px;
+}
+
+
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .column .logo-style {
+  display: flex;
+  align-items: center;
+}
+.footer .desc1 {
+  margin-top: 17px;
+  max-width: 700px;
+  color: #050811;
+  font-size: 20px;
+  line-height: 1.85;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.footer .desc2 {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .socials {
+  display: flex;
+  gap: 19px;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+.footer .title {
+  padding-right: 1px;
+  color: #469fe3;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.75;
+}
+.footer .title a{
+  color: #1774b2;
+  font-size: 15px;
+}
+.footer .title :hover {
+  border-bottom: 4px solid #e3c068;
+}
+
+.footer .list {
+  margin-top: 15px;
+  list-style: none;
+}
+
+.footer .list p {
+  display: inline-block;
+  margin-bottom: 1px;
+  color: #7b7970;
+  font-size: 14px;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+  line-height: 1.85;
+}
+
+.footer .list strong {
+  color: #554f4f;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 1.85;
+}
+
+ .copyright p{
+  padding: 15px 0;
+  color: #185c86;
+  text-align: center;
+  font-size: 17px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  line-height: 1.86;
+}
+.after-footer{
+  border-bottom: 2px solid #dbf1c4;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    background: none; /* Xóa ảnh nền */
+    padding: 40px 20px; /* Điều chỉnh lại padding */
+  }
+
+  .footer .row {
+    flex-direction: column; /* Chuyển đổi hàng thành cột */
+    text-align: center; /* Căn giữa tất cả các phần tử */
+  }
+
+  .footer .row .column {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-bottom: 20px; /* Thêm khoảng cách giữa các cột */
+  }
+  .footer .row .column:first-child {
+    width: 100%;
+  }
+
+  .footer .socials {
+    text-align: center;
+  }
+
+  .footer .list {
+    display: flex;
+    justify-content: space-around; 
+  }
+  
+
+  .footer .title, .footer .list {
+    text-align: left; /* Căn lại nội dung sang trái */
+  }
+  .copyright p{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 901px) {
+  .footer .row .column {
+    width: 45%;
+  }
+
+
+
+}
