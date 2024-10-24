@@ -82,7 +82,7 @@ html {
 }
 
 
-@media screen and (max-width: 1024px) and (min-width: 701px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
     .top {
         margin-top: 70px;
         font-size: 40px;

@@ -161,11 +161,11 @@ main {
 }
 .chu h2 {
   font-family: "Londrina Sketch";
-  font-size: 50px; /* Kích thước chữ cho tiêu đề */
-  color: #3f79c9; /* Màu chữ cho tiêu đề */
-  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
-  text-align: center; /* Căn giữa tiêu đề */
-  font-weight: bold; /* Đậm chữ */
+  font-size: 50px;
+  color: #3f79c9; 
+  margin-bottom: 20px; 
+  text-align: center; 
+  font-weight: bold; 
 }
 
 @media only screen and (max-width: 600px) {
@@ -197,7 +197,7 @@ main {
   
 }
 
-@media screen and (max-width: 1024px) and (min-width: 601px) {
+@media screen and (max-width: 1025px) and (min-width: 601px) {
   main {
     flex-direction: column;
   }
@@ -227,32 +227,32 @@ main {
     padding: 20px;
   }
   .bonus-container {
-    display: grid; /* Sử dụng grid để dễ dàng sắp xếp */
+    display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 cột */
-    gap: 20px; /* Khoảng cách giữa các phần tử */
-    padding: 20px; /* Thêm padding cho bonus-container */
+    gap: 20px; 
+    padding: 20px; 
   }
 
   .bonus {
-    max-width: none; /* Bỏ giới hạn chiều rộng tối đa */
-    padding: 20px; /* Thêm padding cho từng phần bonus */
-    background: rgba(255, 255, 255, 0.9); /* Để có nền trắng trong suốt */
+    max-width: none;
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.9); 
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen  and (min-width: 1550px) {
   .left {
-    height: calc(100vh - 40px); /* Chiều cao của left và right bằng với chiều cao màn hình trừ đi phần top (80px) */
+    height: calc(100vh - 40px); 
   }
 
   .left {
     position: sticky;
-    top: 80px; /* Khoảng cách từ đầu trang xuống */
-    background-size: cover; /* Giữ hình nền đầy đủ */
-    background-position: center 35%; /* Đặt lại vị trí của background */
+    top: 80px; 
+    background-size: cover; 
+    background-position: center 35%;
   }
 
   .right {
-    min-height: calc(100vh - 80px); /* Đặt lại min-height của right */
+    min-height: calc(100vh - 80px); 
   }
 }
